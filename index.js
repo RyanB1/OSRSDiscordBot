@@ -40,7 +40,6 @@ bot.on("message", (msg) => {
       .getStats(name)
       .then((res) => {
         const lvl = res.main.skills[skill].level;
-        console.log(parseInt(expArr[lvl]) - parseInt(res.main.skills[skill].xp));
         msg.reply(
           `${name} has a **${
             skill.charAt(0).toUpperCase() + skill.slice(1)
