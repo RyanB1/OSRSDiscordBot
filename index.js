@@ -33,7 +33,7 @@ bot.on("message", (msg) => {
       })
       .catch((err) => console.error(err));
   } else if(msg.content.startsWith("$help")){ 
-    msg.reply("List of available commands:\n**Combat Level:**\n$lookup [RSN]\n\n**For Individual Skill Levels:**\n$[Skill Name] [RSN]\n**Example:** $attack GiantShafty");
+    msg.reply("List of available commands:\n**Combat Level:**\n$lookup [RSN]\n\n**For Individual Skill Levels:**\n$[Skill Name] [RSN]\n**Example:** $attack player");
   } else if (msg.content[0] === "$") {
     const skill = msg.content.slice(1, msg.content.indexOf(" "));
     hiscores
