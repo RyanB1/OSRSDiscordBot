@@ -43,7 +43,7 @@ bot.on("message", (msg) => {
         msg.reply(
           `${name} has a **${
             skill.charAt(0).toUpperCase() + skill.slice(1)
-          }** Level of **${lvl}** with **${parseInt(expArr[lvl]) - parseInt(res.main.skills[skill].xp)}** experience left until level **${lvl+1}**.`
+          }** Level of **${lvl}** with **${parseInt(expArr[lvl]) - parseInt(res.main.skills[skill].xp)}** experience left until Level **${lvl+1}**.`
         );
       })
       .catch((err) => {
